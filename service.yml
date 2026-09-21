@@ -5,7 +5,7 @@ metadata:
   name: svc1
 spec:
   selector:
-      app: beauty
+      env: blue
   type: LoadBalancer
   ports:
     - port: 80
