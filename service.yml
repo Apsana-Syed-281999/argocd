@@ -5,7 +5,7 @@ metadata:
   name: svc1
 spec:
   selector:
-      env: blue
+      env: green
   type: LoadBalancer
   ports:
     - port: 80
