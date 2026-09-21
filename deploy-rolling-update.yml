@@ -2,11 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dply3
+  name: dply4
   labels:
     app: beauty
 spec:
   replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      minunavailable: 2
   selector:
     matchLabels:
       app: beauty
