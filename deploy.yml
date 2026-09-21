@@ -3,6 +3,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dply1
+  labels:
+    env: blue
 spec:
   replicas: 4
   selector:
