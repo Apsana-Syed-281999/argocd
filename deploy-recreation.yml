@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: dply2
   labels:
-    env: green
+    app: beauty
 spec:
   replicas: 4
   selector:
@@ -15,7 +15,6 @@ spec:
       name: tmplt1
       labels:
         app: beauty
-        env: green
     spec:
       containers:
         - name: con1
