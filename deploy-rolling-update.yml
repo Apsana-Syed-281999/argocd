@@ -7,6 +7,8 @@ metadata:
     app: beauty
 spec:
   replicas: 4
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: beauty
