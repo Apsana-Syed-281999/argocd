@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dply3
+  labels:
+    app: beauty
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: beauty
+  template:
+    metadata:
+      name: tmplt1
+      labels:
+        app: beauty
+    spec:
+      containers:
+        - name: con1
+          image: apsanadevops/beauty:makeup
+          ports:
+           - containerPort: 80
+...
