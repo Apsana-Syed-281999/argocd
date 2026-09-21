@@ -6,7 +6,6 @@ metadata:
 spec:
   selector:
       app: beauty
-      env: green
   type: LoadBalancer
   ports:
     - port: 80
