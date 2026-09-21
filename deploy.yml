@@ -15,8 +15,8 @@ spec:
         app: beauty
     spec:
       containers:
-        name: con1
-        image: apsanadevops/beauty:v1
-        ports:
-          - containerPort: 80
+        - name: con1
+          image: apsanadevops/beauty:v1
+          ports:
+           - containerPort: 80
 ...
