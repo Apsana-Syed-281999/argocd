@@ -10,7 +10,6 @@ spec:
   selector:
     matchLabels:
       app: beauty
-      env: green
   template:
     metadata:
       name: tmplt1
