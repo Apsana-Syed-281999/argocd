@@ -10,11 +10,13 @@ spec:
   selector:
     matchLabels:
       app: beauty
+      env: green
   template:
     metadata:
       name: tmplt1
       labels:
         app: beauty
+        env: green
     spec:
       containers:
         - name: con1
