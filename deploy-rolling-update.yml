@@ -7,11 +7,6 @@ metadata:
     app: beauty
 spec:
   replicas: 4
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 2
-      minunavailable: 2
   selector:
     matchLabels:
       app: beauty
@@ -23,7 +18,7 @@ spec:
     spec:
       containers:
         - name: con1
-          image: apsanadevops/beauty:jewels
+          image: apsanadevops/beauty:makeup
           ports:
            - containerPort: 80
 ...
