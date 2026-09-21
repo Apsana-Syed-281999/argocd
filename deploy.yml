@@ -16,7 +16,6 @@ spec:
       name: tmplt1
       labels:
         app: beauty
-        env : blue
     spec:
       containers:
         - name: con1
