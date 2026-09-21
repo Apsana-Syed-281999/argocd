@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dply4
+  name: dply5
   labels:
     app: beauty
 spec:
