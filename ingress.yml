@@ -29,7 +29,7 @@ kind: Service
 metadata:
   name: svc1
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: makeup
   ports:
