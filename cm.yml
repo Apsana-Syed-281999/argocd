@@ -6,7 +6,7 @@ data:
   env: dev
   app: jewels
 
-  ---
+---
 apiVersion: v1
 kind: Secret
 metadata:
