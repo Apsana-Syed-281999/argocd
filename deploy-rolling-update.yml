@@ -2,25 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dply5
-  labels:
-    app: beauty
+  name: dply1
 spec:
-  replicas: 3
-  strategy:
-    type: Recreate
   selector:
     matchLabels:
-      app: beauty
+      app: makeup
+      env: dev
+  replicas: 3
   template:
     metadata:
       name: tmplt1
       labels:
-        app: beauty
+        app: makeup
+        env: dev
     spec:
       containers:
-        - name: con1
-          image: apsanadevops/beauty:makeup
+        - image: apsanadevops/beauty:makeup
+          name: con-1
           ports:
-           - containerPort: 80
-...
+            - containerPort: 80
