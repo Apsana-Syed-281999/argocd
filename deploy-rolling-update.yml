@@ -21,3 +21,14 @@ spec:
           name: con-1
           ports:
             - containerPort: 80
+          env:
+            - name: env2
+              valueFrom:
+                configMapKeyRef:
+                  name: cm4
+                  key: app
+            - name: env4
+              valueFrom:
+                secretKeyRef:
+                  name: sec4
+                  key: user3
