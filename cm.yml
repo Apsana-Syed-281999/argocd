@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm4
+data:
+  env: dev
+  app: jewels
+
+  ---
+  apiVersion: v1
+kind: Secret
+metadata:
+  name: sec4
+stringData:
+  user3: kishore
+  pas3: kis@123
