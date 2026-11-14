@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: con1
-          image: apsanadevops/beauty:jewels
+          image: apsanadevops/beauty:error
           ports:
             - containerPort: 80
