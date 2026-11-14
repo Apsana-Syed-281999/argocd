@@ -9,15 +9,58 @@ spec:
   selector:
     matchLabels:
       app: makeup
+      env: blue
+  replicas: 3
+  template:
+    metadata:
+      name: tmplt1
+      env: blue
+      labels:
+        app: makeup
+    spec:
+      containers:
+        - name: con1
+          image: apsanadevops/beauty:makeup
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc1
+spec:
+  type: LoadBalancer
+  selector:
+    env: blue
+  ports:
+    - port: 80
+      targetPort: 80
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deply1
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: makeup
+      env: green
   replicas: 3
   template:
     metadata:
       name: tmplt1
       labels:
         app: makeup
+        env: green
     spec:
       containers:
         - name: con1
-          image: apsanadevops/beauty:error
+          image: apsanadevops/beauty:jewels
           ports:
             - containerPort: 80
