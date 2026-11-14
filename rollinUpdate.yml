@@ -43,7 +43,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deply1
+  name: deply2
 spec:
   strategy:
     type: Recreate
