@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: con1
-          image: apsanadevops/beauty:makeup
+          image: apsanadevops/beauty:shoes
           ports:
             - containerPort: 80
