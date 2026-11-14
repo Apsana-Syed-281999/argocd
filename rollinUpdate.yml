@@ -4,8 +4,6 @@ kind: Deployment
 metadata:
   name: deply1
 spec:
-  strategy:
-    type: Recreate
   selector:
     matchLabels:
       app: makeup
@@ -45,8 +43,6 @@ kind: Deployment
 metadata:
   name: deply2
 spec:
-  strategy:
-    type: Recreate
   selector:
     matchLabels:
       app: makeup
