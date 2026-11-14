@@ -14,9 +14,9 @@ spec:
   template:
     metadata:
       name: tmplt1
-      env: blue
       labels:
         app: makeup
+        env: blue
     spec:
       containers:
         - name: con1
